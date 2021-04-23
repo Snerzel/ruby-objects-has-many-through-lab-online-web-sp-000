@@ -19,15 +19,15 @@ class Doctor
      appointment
   end
 
- def appointments
+  def appointments
     Appointment.all.select do |app|
     app.doctor == self
   end
 end
 
-def patients
-  appointments.collect do |app|
+  def patients
+    appointments.collect do |app|
     app.patient
+    end
   end
-end
 end
