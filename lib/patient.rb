@@ -24,8 +24,8 @@ class Patient
 
 
    def doctors
-      appointments.collect do |appointment|
-        appointment.patient
+      appointments.collect do |appointments|
+        appointments.patient
       end
     end
 end
